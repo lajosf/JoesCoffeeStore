@@ -49,6 +49,14 @@
     <Content Include="allcoffees.html" />
     <Content Include="Styles\Layout.css" />
     <Content Include="scripts\myScript.js" />
+    <Content Include="checkout.html" />
+    <Content Include="images\coffeeheader.jpg" />
+    <Content Include="images\coffeeheader.old.jpg" />
+    <Content Include="images\cotm.jpg" />
+    <Content Include="images\cotm.old.jpg" />
+    <Content Include="images\logo.large.png" />
+    <Content Include="images\coffee\coffee1-large.jpg" />
+    <Content Include="images\coffee\coffee1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -59,6 +67,7 @@
     <Folder Include="images\" />
     <Folder Include="Styles\" />
     <Folder Include="scripts\" />
+    <Folder Include="images\coffee\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
