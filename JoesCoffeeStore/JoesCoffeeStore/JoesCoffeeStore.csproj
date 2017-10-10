@@ -57,6 +57,7 @@
     <Content Include="images\logo.large.png" />
     <Content Include="images\coffee\coffee1-large.jpg" />
     <Content Include="images\coffee\coffee1.jpg" />
+    <Content Include="scripts\dragAndDrop.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
