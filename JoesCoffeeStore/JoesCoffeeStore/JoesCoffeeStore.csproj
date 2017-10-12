@@ -60,6 +60,7 @@
     <Content Include="scripts\dragAndDrop.js" />
     <Content Include="findus.html" />
     <Content Include="scripts\geopositioning.js" />
+    <Content Include="scripts\videoplayer.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -71,6 +72,10 @@
     <Folder Include="Styles\" />
     <Folder Include="scripts\" />
     <Folder Include="images\coffee\" />
+    <Folder Include="video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\movie.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
