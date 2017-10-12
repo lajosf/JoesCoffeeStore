@@ -5,13 +5,21 @@
     font-family: Verdana;
 }
 
+@font-face {
+    font-family: headerfont;
+    src: url('../fonts/Lobster_1.3.otf');
+}
+
+
 header {
     font-weight: bold;
 }
 
-@font-face{
-    font-family:headerfont;
-    src:url('../fonts/Lobster_1.3.otf');
+.searchbox {
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
 }
 
 .headerlogo {
@@ -24,8 +32,14 @@ header {
         width: 60px;
     }
 
-#mainHeader {
-    height: 80px;
+#headername {
+    font-size: 40px;
+    font-family: headerfont;
+    text-shadow: 5px 5px 5px #5f2c17;
+    color: #603813;
+    padding: 15px;
+    margin: 8px 0px;
+    font-weight: bold;
 }
 
 nav {
@@ -45,6 +59,14 @@ nav {
             display: block;
         }
 
+.backgroundgradient {
+    background: -webkit-linear-gradient(left, #603813, #341c05); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #603813, #341c05); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #603813, #341c05); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #603813, #341c05);
+}
+
+
 .navlink {
     height: 35px;
     margin-right: 10px;
@@ -58,54 +80,6 @@ nav {
     .navlink.active {
     }
 
-.backgroundgradient {
-    background: -webkit-linear-gradient(left, #603813, #341c05); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #603813, #341c05); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #603813, #341c05); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #603813, #341c05);
-}
-
-.addtocartbutton {
-    cursor: pointer;
-    padding: 4px 25px;
-    background: #603813;
-    border: 1px solid #381f09;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
-    box-shadow: 0 0 4px rgba(0,0,0, .75);
-    color: #f3f3f3;
-    font-size: 0.8em;
-    width: 80px;
-}
-
-    .addtocartbutton:hover, .addtocartbutton:focus {
-        background-color: #512c0a;
-        -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
-        -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
-        box-shadow: 0 0 1px rgba(0,0,0, .75);
-
-    }
-
-.searchbox {
-    float: right;
-    padding: 5px;
-    margin: 10px 10px;
-    width: 200px;
-}
-
-#headername {
-    font-family: headerfont;
-    font-size: 40px;
-    color: #603813;
-    padding: 15px;
-    margin: 8px 0px;
-    font-weight: bold;
-    text-shadow: 5px 5px 5px #5f2c17;
-}
-
 #welcomeimage {
     float: left;
     width: 700px;
@@ -113,7 +87,7 @@ nav {
 
 #coffeeofthemonth {
     float: right;
-    width: 300px;
+    width: 290px;
 }
 
 #welcometext {
@@ -122,8 +96,8 @@ nav {
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
-    column-count: 2;
     -webkit-column-count: 2;
+    column-count: 2;
 }
 
     #welcometext > header {
@@ -170,6 +144,8 @@ nav {
     }
 
 .coffeebestsellers {
+    /*height: 30px;
+    line-height: 30px;*/
     float: left;
 }
 
@@ -221,6 +197,30 @@ nav {
     color: #603813;
     margin-top: 5px;
 }
+
+.addtocartbutton {
+    cursor: pointer;
+    padding: 4px 25px;
+    background: #603813;
+    border: 1px solid #381f09;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    color: #f3f3f3;
+    font-size: 0.8em;
+    width: 80px;
+}
+
+    .addtocartbutton:hover, .addtocartbutton:focus {
+        background-color: #512c0a;
+        -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+        -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+        box-shadow: 0 0 1px rgba(0,0,0, .75);
+    }
+
 
 footer {
     clear: both;
@@ -319,4 +319,55 @@ footer {
     color: green;
     font-weight: bold;
     padding-top: 15px;
+}
+
+.coffeevideoplayer {
+    width: 320px;
+    height: 240px;
+}
+
+/*Find us page styles*/
+.maptostore {
+    float: left;
+    width: 1000px;
+}
+
+#map {
+    float: left;
+    width: 65%;
+    height: 600px;
+    margin: 25px;
+}
+
+#driving-directions {
+    float: left;
+}
+
+/*Checkout page*/
+.textlabel {
+    text-align: left;
+    font-size: 14px;
+    margin: 0px;
+    display: block;
+    width: 250px;
+    padding: 2px 5px;
+    float: left;
+}
+
+.textinput {
+    width: 300px;
+    height: 22px;
+    border: 1px solid #888888;
+}
+
+fieldset {
+    padding: 0px;
+    border: none;
+}
+
+    fieldset > div {
+        border: 2px solid #888888;
+    }
+
+.submitbutton {
 }
