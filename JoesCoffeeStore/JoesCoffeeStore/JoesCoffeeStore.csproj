@@ -61,6 +61,7 @@
     <Content Include="findus.html" />
     <Content Include="scripts\geopositioning.js" />
     <Content Include="scripts\videoplayer.js" />
+    <Content Include="scripts\canvasChart.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
